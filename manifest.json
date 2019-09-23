@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "assets/jquery-3.3.1.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon_128.png",
+         "16": "images/icon_16.png",
+         "32": "images/icon_32.png",
+         "48": "images/icon_48.png"
+      }
+   },
+   "web_accessible_resources": [
+      "images/*"
+   ],
+   "content_scripts": [ {
+      "js": [ "assets/jquery-3.3.1.min.js", "background.js" ],
+      "matches": [ "https://web.whatsapp.com/" ]
+   } ],
+   "description": "Download your WhatsApp Group Contacts! Share WhatsApp Message on Facebook, LinkedIn, Twitter",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "bd552a7d92a3c6e8e223519a3bd40175dd307b2c27206b2f9501641008634e2d5c88f866ccac95f64f6302c0e1f5ec24fe6699e735bfdedce46a3b824f0e48d6",
+   "manifest_version": 2,
+   "name": "WhatsApp - Contacts Download & Social Media Share",
+   "permissions": [ "tabs", "activeTab", "declarativeContent", "storage",  "contextMenus" ],
+   "short_name": "WhatsDown",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
